@@ -169,6 +169,8 @@ Through this project I developed practical experience in:
 - Database modeling with JPA/Hibernate  
 
 ---
+## License
+Project created for educational purposes and personal portfolio.
 
 ##  Author
 

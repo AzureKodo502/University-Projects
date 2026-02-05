@@ -171,6 +171,12 @@ Through this project I developed practical experience in:
 - Database modeling with JPA/Hibernate  
 
 ---
+### Documentation
+- Full Javadoc coverage for Service and Controller layers.
+  
+ ### Code Quality
+- Comprehensive **Javadoc** for all backend components to ensure maintainability and team collaboration.
+  
 ## License
 Project created for educational purposes and personal portfolio.
 

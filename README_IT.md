@@ -8,7 +8,7 @@
 ![API](https://img.shields.io/badge/API-REST-success)
 ![Database](https://img.shields.io/badge/Database-H2-lightgrey)
 ![Status](https://img.shields.io/badge/Stato-Completato-success)
-![Project Type](https://img.shields.io/badge/Proggetto-Portfolio-informativo)
+![Project Type](https://img.shields.io/badge/Proggetto-Portfolio-informational)
 
 > **🇮🇹 Versione Inglese disponibile qui → [Read in English](./README.md)**
 

@@ -9,6 +9,11 @@ import org.springframework.stereotype.Service;
 import java.time.LocalDateTime;
 import java.util.List;
 
+/**
+ * Servizio deputato alla gestione del checkout e della cronologia acquisti.
+ * Coordina la transizione dei dati dal carrello all'ordine definitivo
+ * garantendo la coerenza finanziaria e l'integrità del database.
+ */
 @Service
 public class OrderService {
 
@@ -17,26 +22,33 @@ public class OrderService {
     @Autowired private CartItemRepository cartItemRepository;
     @Autowired private UserRepository userRepository;
 
-    // LOGICA DI CHECKOUT
-    @Transactional // Se una riga fallisce, annulla TUTTO (Rollback)
+    /**
+     * Esegue il processo di checkout completo per un utente.
+     * Calcola il totale, genera la testata dell'ordine, sposta gli articoli del carrello
+     * nei dettagli dell'ordine (OrderItem) e infine pulisce il carrello.
+     * * @param userId Identificativo dell'utente acquirente.
+     * @return L'oggetto {@link Order} creato e persistito.
+     * @throws RuntimeException se l'utente non esiste o se il carrello risulta vuoto.
+     */
+    @Transactional
     public Order creaOrdine(Long userId) {
-        // Recupera Utente
+        // Recupero dell'utente per l'associazione dell'ordine
         User user = userRepository.findById(userId)
                 .orElseThrow(() -> new RuntimeException("Utente non trovato"));
 
-        // Recupera il Carrello
+        // Recupero del carrello corrente. Se vuoto, l'operazione viene interrotta.
         List<CartItem> carrello = cartItemRepository.findByUser(user);
         if (carrello.isEmpty()) {
             throw new RuntimeException("Il carrello è vuoto!");
         }
 
-        // Calcola il totale
+        // Calcolo dinamico del totale dell'ordine basato sui prezzi correnti del catalogo
         double totale = 0;
         for (CartItem item : carrello) {
             totale += item.getScarpa().getPrezzo() * item.getQuantita();
         }
 
-        // Salva l'Ordine
+        // Creazione e salvataggio della "testata" dell'ordine
         Order newOrder = new Order();
         newOrder.setUser(user);
         newOrder.setDataCreazione(LocalDateTime.now());
@@ -44,7 +56,8 @@ public class OrderService {
         newOrder.setTotale(totale);
         Order ordineSalvato = orderRepository.save(newOrder);
 
-        // Sposta gli elementi da Carrello a OrderItem
+        // Migrazione dei dati: trasformazione di ogni CartItem in un OrderItem persistente.
+        // In questa fase viene congelato il prezzo di vendita attuale.
         for (CartItem cartItem : carrello) {
             OrderItem orderItem = new OrderItem();
             orderItem.setOrder(ordineSalvato);
@@ -55,12 +68,17 @@ public class OrderService {
             orderItemRepository.save(orderItem);
         }
 
-        // Svuota il carrello una volta inseriti nell'ordine
+        // Operazione finale: svuotamento del carrello dell'utente
         cartItemRepository.deleteAll(carrello);
 
         return ordineSalvato;
     }
 
+    /**
+     * Recupera lo storico degli ordini effettuati da un utente.
+     * @param userId ID dell'utente.
+     * @return Lista di ordini associati.
+     */
     public List<Order> getOrdiniUtente(Long userId) {
         User user = userRepository.findById(userId).orElseThrow();
         return orderRepository.findByUser(user);

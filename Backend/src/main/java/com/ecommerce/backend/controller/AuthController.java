@@ -8,14 +8,27 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+/**
+ * REST Controller deputato alla gestione dei processi di autenticazione e autorizzazione.
+ * Espone gli endpoint necessari per la registrazione di nuovi utenti e il login al sistema,
+ * fungendo da entry-point per il modulo di sicurezza dell'applicazione.
+ */
 @RestController
 @RequestMapping("/api/auth")
 public class AuthController {
 
+    /**
+     * Servizio di business logic per l'autenticazione, iniettato tramite Dependency Injection.
+     */
     @Autowired
     private AuthService authService;
 
-    // POST http://localhost:8080/api/auth/register
+    /**
+     * Gestisce la registrazione di un nuovo utente nel sistema.
+     * * @param request DTO contenente i dati di registrazione inviati dal client.
+     * @return ResponseEntity contenente l'oggetto {@link User} creato in caso di successo (HTTP 200),
+     * o un messaggio d'errore in caso di fallimento della validazione/logica (HTTP 400).
+     */
     @PostMapping("/register")
     public ResponseEntity<?> register(@RequestBody RegisterRequest request) {
         try {
@@ -26,7 +39,12 @@ public class AuthController {
         }
     }
 
-    // POST http://localhost:8080/api/auth/login
+    /**
+     * Gestisce la procedura di login verificando le credenziali fornite.
+     * * @param request DTO contenente l'identificativo e la password dell'utente.
+     * @return ResponseEntity con l'oggetto {@link User} autenticato (HTTP 200),
+     * o uno status di errore Unauthorized in caso di credenziali errate (HTTP 401).
+     */
     @PostMapping("/login")
     public ResponseEntity<?> login(@RequestBody LoginRequest request) {
         try {

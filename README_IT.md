@@ -10,7 +10,7 @@
 ![Status](https://img.shields.io/badge/Stato-Completato-success)
 ![Project Type](https://img.shields.io/badge/Proggetto-Portfolio-informational)
 
-> **🇮🇹 Versione Inglese disponibile qui → [Read in English](./README.md)**
+> **EN Versione Inglese disponibile qui → [Read in English](./README.md)**
 
 ## 🌟 Overview
 

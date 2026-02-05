@@ -9,9 +9,9 @@
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Project Type](https://img.shields.io/badge/Project-Portfolio-informational)
 
+> **IT Italian version available here → [Leggi in Italiano](./README_IT.md)**
 
-
-##  Overview
+## 🌟 Overview
 
 This project is a **full-stack desktop e-commerce application** built using **JavaFX (frontend)** and **Spring Boot REST APIs (backend)**.
 
@@ -19,10 +19,45 @@ The application simulates a real-world online shoe store and allows users to bro
 
 The main goal of this project was to design a scalable and maintainable software system following industry best practices such as layered architecture, asynchronous UI operations, and RESTful communication.
 
-🇮🇹 Italian version available here → (Link)
+---
+
+## Screenshots
+
+| **Login & Auth** | **Product Catalog** |
+|:---:|:---:|
+| ![Login Screen](screenshots/login.png) | ![Home Page](screenshots/home.png) |
+
+| **Shopping Cart** |
+| ![Cart View](screenshots/cart.png) |
 
 ---
 
+## How to Run
+
+To run this application, you need to start both the **Backend Server** and the **Frontend Client**.
+
+### Prerequisites
+* **Java JDK 21** installed.
+* **Maven** (optional, wrapper is included).
+
+### Step 1: Start the Backend
+Open a terminal in the `Backend` folder and run:
+```bash
+# Windows
+./mvnw spring-boot:run
+
+# Mac/Linux
+./mvnw spring-boot:run
+```
+### Step 2: Start the Frontend
+Open a terminal in the `Frontend` foldern and run:
+```bash
+# Windows
+./mvnw javafx:run
+
+# Mac/Linux
+./mvnw javafx:run
+```
 ##  Architecture
 
 The application follows a layered architecture both on frontend and backend.
@@ -116,12 +151,12 @@ The database is automatically populated through a CommandLineRunner script that 
 
 ---
 
-##  Future Improvements
+##  Future Improvements (Roadmap)
 
-- JWT Authentication
-- Payment gateway simulation
-- Docker containerization
-- Multi-currency API integration
+- Advanced Wishlist: Implementation of the Favorites/Wishlist management (Currently in MVP placeholder status).
+- Payment Gateway: Integration with Stripe or PayPal for real transactions.
+- Dockerization: Containerizing the Backend for easier deployment.
+- Multi-currency: API integration for currency conversion.
 
 ---
 
@@ -136,7 +171,19 @@ Through this project I developed practical experience in:
 - Database modeling with JPA/Hibernate  
 
 ---
+### Documentation
+- Full Javadoc coverage for Service and Controller layers.
+  
+ ### Code Quality
+- Comprehensive **Javadoc** for all backend components to ensure maintainability and team collaboration.
+
+### Notes
+- The Frontend component of this application was initially developed as part of a **collaborative university project**, demonstrating teamwork and shared code management. The Backend was subsequently re-architected and expanded individually to implement a robust Spring Boot microservice structure.
+- Please note that **source code comments, variable names, and Javadoc documentation are written in Italian**, for the original academic requirements.
+  
+## License
+Project created for educational purposes and personal portfolio.
 
 ##  Author
 
-Developed by **[Tuo Nome]**
+Developed by **Oleksandr Bevtsyk**

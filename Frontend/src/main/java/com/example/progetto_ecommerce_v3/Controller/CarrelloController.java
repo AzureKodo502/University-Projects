@@ -11,6 +11,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
@@ -171,11 +172,13 @@ public class CarrelloController {
             SceneHandler.getInstance().Info(Message.Carrello_Vuoto);
             return;
         }
-        try {
-            SceneHandler.getInstance().loadPagamento();
-        } catch (Exception e) {
-            SceneHandler.getInstance().Errore(Message.Errore_Generico);
-        }
+
+        // MODIFICA MVP: Alert invece di cambio scena
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Funzionalità in Arrivo");
+        alert.setHeaderText("Integrazione Pagamenti");
+        alert.setContentText("Il modulo di pagamento (Stripe/PayPal) sarà integrato prossimamente.\nQuesta è una versione dimostrativa (MVP).");
+        alert.showAndWait();
     }
 
     @FXML void loadHome(MouseEvent event) { caricahome(); }

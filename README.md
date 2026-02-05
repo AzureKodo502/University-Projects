@@ -1,7 +1,7 @@
 # 🛒 E-Commerce Desktop Application – Full Stack Java Project
 
 ![Java](https://img.shields.io/badge/Java-21-blue)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-4.0.2-brightgreen)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen)
 ![JavaFX](https://img.shields.io/badge/JavaFX-UI-orange)
 ![Architecture](https://img.shields.io/badge/Architecture-MVC-blueviolet)
 ![API](https://img.shields.io/badge/API-REST-success)
@@ -9,9 +9,9 @@
 ![Status](https://img.shields.io/badge/Status-Completed-success)
 ![Project Type](https://img.shields.io/badge/Project-Portfolio-informational)
 
+> **🇮🇹 Italian version available here → [Leggi in Italiano](./README_IT.md)**
 
-
-##  Overview
+## 🌟 Overview
 
 This project is a **full-stack desktop e-commerce application** built using **JavaFX (frontend)** and **Spring Boot REST APIs (backend)**.
 
@@ -19,9 +19,43 @@ The application simulates a real-world online shoe store and allows users to bro
 
 The main goal of this project was to design a scalable and maintainable software system following industry best practices such as layered architecture, asynchronous UI operations, and RESTful communication.
 
-🇮🇹 Italian version available here → (Link)
+---
+
+## Screenshots
+
+| **Login & Auth** | **Product Catalog** |
+|:---:|:---:|
+| ![Login Screen](screenshots/login.png) | ![Home Page](screenshots/home.png) |
+
+| **Shopping Cart** |
+|:---:|:---:|
+| ![Cart View](screenshots/cart.png) |
 
 ---
+
+## How to Run
+
+To run this application, you need to start both the **Backend Server** and the **Frontend Client**.
+
+### Prerequisites
+* **Java JDK 21** installed.
+* **Maven** (optional, wrapper is included).
+
+### Step 1: Start the Backend
+Open a terminal in the `Backend` folder and run:
+```bash
+# Windows
+./mvnw spring-boot:run
+
+# Mac/Linux
+./mvnw spring-boot:run
+
+### Step 2: Start the Frontend
+# Windows
+./mvnw javafx:run
+
+# Mac/Linux
+./mvnw javafx:run
 
 ##  Architecture
 

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#KeyPressed" prefHeight="800.0" prefWidth="1535.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto_ecommerce_v3.Controller.ChiSiamoNoiController">
+    <children>
+        <BorderPane fx:id="borderpane" onKeyPressed="#KeyPressed" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <top>
+                <Pane fx:id="pane" onKeyPressed="#KeyPressed" prefHeight="70.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fx:id="back_view" fitHeight="30.0" fitWidth="50.0" layoutX="37.0" layoutY="20.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                            <image>
+                                <Image url="@../../../../images/homePageIcons/home.png" />
+                            </image></ImageView>
+                        <ImageView fx:id="stride" fitHeight="72.0" fitWidth="200.0" layoutX="669.0" layoutY="4.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                            <image>
+                                <Image url="@../../../../images/Logo/Logo_Stride_Style.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </Pane>
+            </top>
+            <center>
+                <HBox onKeyPressed="#KeyPressed" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox prefHeight="659.0" prefWidth="523.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="128.0" prefWidth="368.0" text="Matteo Avenoso" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fitHeight="288.0" fitWidth="347.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../images/matteo_avenoso.png" />
+                                    </image>
+                                </ImageView>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email:   vnsmtt03d24g791e@studenti.unical.it" wrappingWidth="346.9366867095232">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="10.0" top="20.0" />
+                                    </VBox.margin></Text>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Matricola:  246378" wrappingWidth="363.73676681518555">
+                                    <VBox.margin>
+                                        <Insets left="10.0" top="20.0" />
+                                    </VBox.margin>
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Text>
+                            </children>
+                     <HBox.margin>
+                        <Insets top="70.0" />
+                     </HBox.margin>
+                        </VBox>
+                        <VBox prefHeight="659.0" prefWidth="415.0">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="128.0" prefWidth="396.0" text="Marco Picerno" textAlignment="CENTER">
+                                    <font>
+                                        <Font name="System Bold" size="36.0" />
+                                    </font>
+                                </Label>
+                                <ImageView fitHeight="289.0" fitWidth="382.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../images/marco_picerno.png" />
+                                    </image>
+                                </ImageView>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email:   pcrmrc01d24d005u@studenti.unical.it" wrappingWidth="346.9366867095232">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="20.0" top="20.0" />
+                                    </VBox.margin>
+                                </Text>
+                                <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Matricola:  223723" wrappingWidth="363.73676681518555">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                    <VBox.margin>
+                                        <Insets left="20.0" top="20.0" />
+                                    </VBox.margin>
+                                </Text>
+                            </children>
+                     <HBox.margin>
+                        <Insets top="70.0" />
+                     </HBox.margin>
+                        </VBox>
+                  <VBox prefHeight="659.0" prefWidth="415.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="128.0" prefWidth="396.0" text="Antonio Falace" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="289.0" fitWidth="382.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../images/marco_picerno.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email:   flcntn01s19d086c@studenti.unical.it" wrappingWidth="346.9366867095232">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Matricola:  220257" wrappingWidth="363.73676681518555">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="70.0" />
+                     </HBox.margin>
+                  </VBox>
+                  <VBox prefHeight="659.0" prefWidth="415.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="128.0" prefWidth="396.0" text="Oleksandr Bevtsyk" textAlignment="CENTER">
+                           <font>
+                              <Font name="System Bold" size="36.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="289.0" fitWidth="382.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../../images/marco_picerno.png" />
+                           </image>
+                        </ImageView>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Email:   bvtlsn00h11z138h@studenti.unical.it" wrappingWidth="346.9366867095232">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Text>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Matricola:  246169" wrappingWidth="363.73676681518555">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Text>
+                     </children>
+                     <HBox.margin>
+                        <Insets top="70.0" />
+                     </HBox.margin>
+                  </VBox>
+                    </children>
+                </HBox>
+            </center>
+         <bottom>
+            <Pane fx:id="pane" onKeyPressed="#KeyPressed" prefHeight="70.0" prefWidth="1535.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="infoprivacy" fontSmoothingType="LCD" layoutX="700.0" layoutY="40.0" onMouseClicked="#infoClicked" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="INFO PRIVACY" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fx:id="puoitrovare" fontSmoothingType="LCD" layoutX="1137.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUOI TROVARCI ANCHE SU :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER" layoutX="1314.0" layoutY="17.0" prefHeight="18.0" prefWidth="162.0">
+                     <children>
+                        <ImageView fx:id="facebook" fitHeight="50.0" fitWidth="35.0" onMouseClicked="#facebookClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/facebook-removebg-preview.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="instagram" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#instaClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/insta.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="twitter" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#twitterClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/twitter.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </bottom>
+        </BorderPane>
+    </children>
+</AnchorPane>

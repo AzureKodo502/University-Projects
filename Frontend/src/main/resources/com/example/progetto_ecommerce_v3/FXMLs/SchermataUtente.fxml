@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="797.0" prefWidth="1537.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto_ecommerce_v3.Controller.SchermataUtenteController">
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane fx:id="pane" prefHeight="70.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="stride" fitHeight="72.0" fitWidth="200.0" layoutX="669.0" layoutY="4.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/Logo/Logo_Stride_Style.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="back_view" fitHeight="30.0" fitWidth="50.0" layoutX="37.0" layoutY="20.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/homePageIcons/home.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane fx:id="pane" prefHeight="70.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" layoutX="1314.0" layoutY="17.0" prefHeight="18.0" prefWidth="162.0">
+                     <children>
+                        <ImageView fx:id="facebook" fitHeight="50.0" fitWidth="35.0" onMouseClicked="#facebookClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/facebook-removebg-preview.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="instagram" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#instaClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/insta.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="twitter" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#twitterClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/twitter.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </HBox>
+                  <Text fx:id="chisiamo" layoutX="220.0" layoutY="40.0" onMouseClicked="#chisiamoClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="CHI SIAMO">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="infoprivacy" layoutX="700.0" layoutY="40.0" onMouseClicked="#infoClicked" strokeType="OUTSIDE" strokeWidth="0.0" text="INFO  PRIVACY">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="puoitrovare" layoutX="1137.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUOI TROVARCI ANCHE SU:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+         </bottom>
+         <left>
+            <VBox prefHeight="200.0" prefWidth="500.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label text="IL MIO ACCOUNT " textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="40.0" top="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="26.0" />
+                     </font>
+                  </Label>
+                  <Pane prefHeight="156.0" prefWidth="500.0">
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox layoutX="8.0" prefHeight="157.0" prefWidth="494.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="158.0" prefWidth="113.0">
+                                 <children>
+                                    <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Nome">
+                                       <VBox.margin>
+                                          <Insets left="25.0" top="5.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Separator prefWidth="200.0">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Separator>
+                                    <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Cognome">
+                                       <VBox.margin>
+                                          <Insets left="25.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Separator prefWidth="200.0">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="5.0" />
+                                       </VBox.margin>
+                                    </Separator>
+                                    <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Email">
+                                       <VBox.margin>
+                                          <Insets left="25.0" top="6.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Separator prefWidth="200.0">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="4.0" />
+                                       </VBox.margin>
+                                    </Separator>
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="158.0" prefWidth="383.0">
+                                 <children>
+                                    <Text fx:id="NomeText" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="350.0">
+                                       <VBox.margin>
+                                          <Insets left="25.0" top="30.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Separator prefWidth="200.0">
+                                       <VBox.margin>
+                                          <Insets top="3.0" />
+                                       </VBox.margin>
+                                    </Separator>
+                                    <Text fx:id="CognomeText" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="350.0">
+                                       <VBox.margin>
+                                          <Insets left="25.0" top="13.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Separator prefWidth="200.0">
+                                       <VBox.margin>
+                                          <Insets top="2.0" />
+                                       </VBox.margin>
+                                    </Separator>
+                                    <Text fx:id="EmailText" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="350.0">
+                                       <VBox.margin>
+                                          <Insets left="25.0" top="8.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="16.0" />
+                                       </font>
+                                    </Text>
+                                    <Separator prefWidth="200.0">
+                                       <VBox.margin>
+                                          <Insets top="2.0" />
+                                       </VBox.margin>
+                                    </Separator>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </Pane>
+                  <Button fx:id="CambiaPasswordButton" mnemonicParsing="false" onMouseClicked="#cambiaPassword" style="-fx-cursor: hand;" text="CAMBIA PASSWORD" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="180.0" top="50.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="150.0" left="160.0" top="100.0" />
+               </BorderPane.margin>
+            </VBox>
+         </left>
+         <center>
+            <ScrollPane fx:id="scroll_pane" prefHeight="547.0" prefWidth="675.0" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox fx:id="puoitrovare" prefHeight="698.0" prefWidth="606.0" spacing="10.0">
+                     <children>
+                        <HBox fx:id="hbox1" prefHeight="92.0" prefWidth="761.0">
+                           <children>
+                              <VBox prefHeight="92.0" prefWidth="574.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdotto1" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="560.0">
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="540.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="prezzo1" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="109.3333740234375">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" right="8.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="hbox2" layoutX="18.0" layoutY="15.0" prefHeight="92.0" prefWidth="761.0">
+                           <children>
+                              <VBox prefHeight="92.0" prefWidth="581.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdotto2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="560.0">
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="540.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="prezzo2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="109.3333740234375">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="hbox3" layoutX="18.0" layoutY="15.0" prefHeight="92.0" prefWidth="761.0">
+                           <children>
+                              <VBox prefHeight="92.0" prefWidth="589.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdotto3" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="560.0">
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="540.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="prezzo3" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="109.3333740234375">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="hbox4" layoutX="18.0" layoutY="15.0" prefHeight="92.0" prefWidth="761.0">
+                           <children>
+                              <VBox prefHeight="92.0" prefWidth="586.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdotto4" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="560.0">
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="540.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="prezzo4" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="109.3333740234375">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="hbox5" layoutX="18.0" layoutY="15.0" prefHeight="92.0" prefWidth="761.0">
+                           <children>
+                              <VBox prefHeight="92.0" prefWidth="584.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdotto5" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="560.0">
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="540.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="prezzo5" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="109.3333740234375">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="hbox6" layoutX="18.0" layoutY="15.0" prefHeight="92.0" prefWidth="761.0">
+                           <children>
+                              <VBox prefHeight="92.0" prefWidth="602.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdotto6" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="560.0">
+                                       <VBox.margin>
+                                          <Insets left="5.0" top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="540.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="8.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="prezzo6" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="109.3333740234375">
+                                             <HBox.margin>
+                                                <Insets left="10.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets />
+                                       </VBox.margin>
+                                    </HBox>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+               <BorderPane.margin>
+                  <Insets bottom="30.0" left="170.0" right="100.0" top="80.0" />
+               </BorderPane.margin>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

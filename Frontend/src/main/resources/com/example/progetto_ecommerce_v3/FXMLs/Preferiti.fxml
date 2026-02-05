@@ -1,0 +1,631 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="797.0" prefWidth="1537.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto_ecommerce_v3.Controller.PreferitiController">
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane fx:id="pane" prefHeight="70.0" BorderPane.alignment="CENTER">
+               <children>
+
+                        <ImageView fx:id="stride" fitHeight="72.0" fitWidth="200.0" layoutX="669.0" layoutY="4.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/Logo/Logo_Stride_Style.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="back_view" fitHeight="30.0" fitWidth="50.0" layoutX="37.0" layoutY="20.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/homePageIcons/home.png" />
+                     </image>
+                  </ImageView>
+                  <Pane layoutX="658.0" layoutY="81.0" prefHeight="52.0" prefWidth="280.0">
+                     <children>
+                        <Text fx:id="TextAggiungiAlCarrello" fontSmoothingType="LCD" layoutX="3.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ORDINE AGGIUNTO AL CARRELLO">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <Label fx:id="preferitiVuoto" layoutX="-207.0" layoutY="8.0" text="NON HAI ANCORA SELEZIONATO NESSUN PREFERITO, CORRI AD ACQUISTARE!">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <HBox alignment="CENTER" layoutX="77.0" layoutY="76.0" prefHeight="65.0" prefWidth="278.0">
+                     <children>
+                        <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="I MIEI PREFERITI " textAlignment="CENTER">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Text>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <ScrollPane fx:id="scroll_pane" prefHeight="551.0" prefWidth="1269.0" BorderPane.alignment="CENTER">
+               <content>
+                  <VBox fx:id="vbox" prefHeight="1220.0" prefWidth="1246.0">
+                     <children>
+                        <HBox fx:id="HBox1" alignment="CENTER" prefHeight="200.0" prefWidth="1355.0">
+                           <children>
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="200.0" prefWidth="0.0" />
+                              <ImageView fx:id="ImmagPreferiti1" fitHeight="200.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" />
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="185.0" prefWidth="6.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="946.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdottoPreferiti1" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="922.4168548583984">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="8.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="TAGLIA: ">
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="TagliaBoxPreferiti1" prefHeight="20.0" prefWidth="60.0" style="-fx-cursor: hand;">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="2.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="36.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="Prezzo_Preferiti1" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="16.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="1014.0">
+                                       <children>
+                                          <Button fx:id="AggiungiCarrelloPreferitiButton1" mnemonicParsing="false" style="-fx-cursor: hand;" text="AGGIUNGI AL CARRELLO">
+                                             <HBox.margin>
+                                                <Insets left="500.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="RimuoviPreferitiButton1" mnemonicParsing="false" style="-fx-cursor: Hand;" text="RIMUOVI DAI PREFERITI">
+                                             <HBox.margin>
+                                                <Insets left="50.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="HBox2" alignment="CENTER" layoutX="15.0" layoutY="20.0" prefHeight="200.0" prefWidth="1355.0">
+                           <children>
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="200.0" prefWidth="0.0" />
+                              <ImageView fx:id="ImmagPreferiti2" fitHeight="200.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" />
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="185.0" prefWidth="6.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="946.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdottoPreferiti2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="908.4168548583984">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="8.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="TAGLIA: ">
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="TagliaBoxPreferiti2" prefHeight="20.0" prefWidth="60.0" style="-fx-cursor: hand;">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="2.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="36.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="Prezzo_Preferiti2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="16.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="1014.0">
+                                       <children>
+                                          <Button fx:id="AggiungiCarrelloPreferitiButton2" mnemonicParsing="false" style="-fx-cursor: hand;" text="AGGIUNGI AL CARRELLO">
+                                             <HBox.margin>
+                                                <Insets left="500.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="RimuoviPreferitiButton2" mnemonicParsing="false" style="-fx-cursor: Hand;" text="RIMUOVI DAI PREFERITI">
+                                             <HBox.margin>
+                                                <Insets left="50.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="HBox3" alignment="CENTER" layoutX="15.0" layoutY="20.0" prefHeight="200.0" prefWidth="1355.0">
+                           <children>
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="200.0" prefWidth="0.0" />
+                              <ImageView fx:id="ImmagPreferiti3" fitHeight="200.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" />
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="185.0" prefWidth="6.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="946.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdottoPreferiti3" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="909.4168548583984">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="8.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="TAGLIA: ">
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="TagliaBoxPreferiti3" prefHeight="20.0" prefWidth="60.0" style="-fx-cursor: hand;">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="2.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="36.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="Prezzo_Preferiti3" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="16.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="1014.0">
+                                       <children>
+                                          <Button fx:id="AggiungiCarrelloPreferitiButton3" mnemonicParsing="false" style="-fx-cursor: hand;" text="AGGIUNGI AL CARRELLO">
+                                             <HBox.margin>
+                                                <Insets left="500.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="RimuoviPreferitiButton3" mnemonicParsing="false" style="-fx-cursor: Hand;" text="RIMUOVI DAI PREFERITI">
+                                             <HBox.margin>
+                                                <Insets left="50.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="HBox4" alignment="CENTER" layoutX="15.0" layoutY="20.0" prefHeight="200.0" prefWidth="1355.0">
+                           <children>
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="200.0" prefWidth="0.0" />
+                              <ImageView fx:id="ImmagPreferiti4" fitHeight="200.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" />
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="185.0" prefWidth="6.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="946.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdottoPreferiti4" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="924.4169722795486">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="8.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="TAGLIA: ">
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="TagliaBoxPreferiti4" prefHeight="20.0" prefWidth="60.0" style="-fx-cursor: hand;">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="2.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="36.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="Prezzo_Preferiti4" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="16.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="1014.0">
+                                       <children>
+                                          <Button fx:id="AggiungiCarrelloPreferitiButton4" mnemonicParsing="false" style="-fx-cursor: hand;" text="AGGIUNGI AL CARRELLO">
+                                             <HBox.margin>
+                                                <Insets left="500.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="RimuoviPreferitiButton4" mnemonicParsing="false" style="-fx-cursor: Hand;" text="RIMUOVI DAI PREFERITI">
+                                             <HBox.margin>
+                                                <Insets left="50.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="HBox5" alignment="CENTER" layoutX="15.0" layoutY="20.0" prefHeight="200.0" prefWidth="1355.0">
+                           <children>
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="200.0" prefWidth="0.0" />
+                              <ImageView fx:id="ImmagPreferiti5" fitHeight="200.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" />
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="185.0" prefWidth="6.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="946.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdottoPreferiti5" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="924.4169722795486">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="8.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="TAGLIA: ">
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="TagliaBoxPreferiti5" prefHeight="20.0" prefWidth="60.0" style="-fx-cursor: hand;">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="2.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="36.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="Prezzo_Preferiti5" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="16.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="1014.0">
+                                       <children>
+                                          <Button fx:id="AggiungiCarrelloPreferitiButton5" mnemonicParsing="false" style="-fx-cursor: hand;" text="AGGIUNGI AL CARRELLO">
+                                             <HBox.margin>
+                                                <Insets left="500.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="RimuoviPreferitiButton5" mnemonicParsing="false" style="-fx-cursor: Hand;" text="RIMUOVI DAI PREFERITI">
+                                             <HBox.margin>
+                                                <Insets left="50.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox fx:id="HBox6" alignment="CENTER" layoutX="15.0" layoutY="20.0" prefHeight="200.0" prefWidth="1355.0">
+                           <children>
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="200.0" prefWidth="0.0" />
+                              <ImageView fx:id="ImmagPreferiti6" fitHeight="200.0" fitWidth="280.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" />
+                              <Separator fx:id="separator" orientation="VERTICAL" prefHeight="185.0" prefWidth="6.0" />
+                              <VBox alignment="CENTER" prefHeight="200.0" prefWidth="946.0">
+                                 <children>
+                                    <Text fx:id="TitoloProdottoPreferiti6" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="924.4169722795486">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="8.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="18.0" />
+                                       </font>
+                                    </Text>
+                                    <HBox prefHeight="30.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="TAGLIA: ">
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="5.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <ComboBox fx:id="TagliaBoxPreferiti6" prefHeight="20.0" prefWidth="60.0" style="-fx-cursor: hand;">
+                                             <HBox.margin>
+                                                <Insets left="3.0" top="2.0" />
+                                             </HBox.margin>
+                                          </ComboBox>
+                                       </children>
+                                       <VBox.margin>
+                                          <Insets top="15.0" />
+                                       </VBox.margin>
+                                    </HBox>
+                                    <HBox prefHeight="36.0" prefWidth="1075.0">
+                                       <children>
+                                          <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="PREZZO: ">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                             <HBox.margin>
+                                                <Insets left="5.0" top="15.0" />
+                                             </HBox.margin>
+                                          </Text>
+                                          <Text fx:id="Prezzo_Preferiti6" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0">
+                                             <HBox.margin>
+                                                <Insets left="10.0" top="16.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="CENTER_LEFT" prefHeight="92.0" prefWidth="1014.0">
+                                       <children>
+                                          <Button fx:id="AggiungiCarrelloPreferitiButton6" mnemonicParsing="false" style="-fx-cursor: hand;" text="AGGIUNGI AL CARRELLO">
+                                             <HBox.margin>
+                                                <Insets left="500.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                          <Button fx:id="RimuoviPreferitiButton6" mnemonicParsing="false" style="-fx-cursor: Hand;" text="RIMUOVI DAI PREFERITI">
+                                             <HBox.margin>
+                                                <Insets left="50.0" top="8.0" />
+                                             </HBox.margin>
+                                             <font>
+                                                <Font size="13.0" />
+                                             </font>
+                                          </Button>
+                                       </children>
+                                    </HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="5.0" right="5.0" top="10.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+               <BorderPane.margin>
+                  <Insets bottom="25.0" left="110.0" right="160.0" top="70.0" />
+               </BorderPane.margin>
+            </ScrollPane>
+         </center>
+         <bottom>
+            <Pane fx:id="pane" prefHeight="70.0" prefWidth="1535.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="chisiamo" fontSmoothingType="LCD" layoutX="220.0" layoutY="40.0" onMouseClicked="#chisiamoClicked" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="CHI SIAMO" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fx:id="infoprivacy" fontSmoothingType="LCD" layoutX="700.0" layoutY="40.0" onMouseClicked="#infoClicked" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="INFO PRIVACY" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fx:id="puoitrovare" fontSmoothingType="LCD" layoutX="1137.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUOI TROVARCI ANCHE SU :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER" layoutX="1314.0" layoutY="17.0" prefHeight="18.0" prefWidth="162.0">
+                     <children>
+                        <ImageView fx:id="facebook" fitHeight="50.0" fitWidth="35.0" onMouseClicked="#facebookClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/facebook-removebg-preview.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="instagram" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#instaClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/insta.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="twitter" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#twitterClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/twitter.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

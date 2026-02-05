@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1535.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto_ecommerce_v3.Controller.offWhiteController">
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane fx:id="pane" prefHeight="70.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="back_view" fitHeight="30.0" fitWidth="50.0" layoutX="37.0" layoutY="20.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/homePageIcons/home.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="stride" fitHeight="72.0" fitWidth="200.0" layoutX="669.0" layoutY="4.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/Logo/Logo_Stride_Style.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane fx:id="pane" prefHeight="70.0" prefWidth="1535.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="chisiamo" fontSmoothingType="LCD" layoutX="220.0" layoutY="40.0" onMouseClicked="#chisiamoClicked" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="CHI SIAMO" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fx:id="infoprivacy" fontSmoothingType="LCD" layoutX="700.0" layoutY="40.0" onMouseClicked="#infoClicked" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="INFO PRIVACY" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fx:id="puoitrovare" fontSmoothingType="LCD" layoutX="1137.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUOI TROVARCI ANCHE SU :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER" layoutX="1314.0" layoutY="17.0" prefHeight="18.0" prefWidth="162.0">
+                     <children>
+                        <ImageView fx:id="facebook" fitHeight="50.0" fitWidth="35.0" onMouseClicked="#facebookClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/facebook-removebg-preview.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="instagram" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#instaClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/insta.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="twitter" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#twitterClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/twitter.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </bottom>
+         <left>
+            <ImageView fitHeight="657.0" fitWidth="787.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../../images/Offwhite/OFF2222.jpg" />
+               </image>
+            </ImageView>
+         </left>
+         <right>
+            <ImageView fitHeight="657.0" fitWidth="787.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../../images/Offwhite/OFFFF1.jpg" />
+               </image>
+            </ImageView>
+         </right>
+         <center>
+            <VBox prefHeight="651.0" prefWidth="601.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="127.0" prefWidth="763.0" text="JORDAN X OFF-WHITE">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Presentazione Esclusiva: Jordan x Off-White" wrappingWidth="686.1366577148438">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Separator prefWidth="200.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Un'Unione Iconica di Stile e Innovazione" wrappingWidth="634.9367065429688">
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Jordan Brand e Off-White si uniscono per ridefinire le regole della moda urbana con una collaborazione esclusiva. Presentiamo le nuove Jordan x Off-White, una scarpa che fonde l'eredità sportiva con l'estetica avanguardistica, firmata dal visionario Virgil Abloh." wrappingWidth="632.7999877929688">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Separator prefWidth="200.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Design Inconfondibile e All'Avanguardia">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Le Jordan x Off-White sono un capolavoro di design, caratterizzate da dettagli unici e riconoscibili che catturano l'essenza di entrambe le icone:Estetica Distintiva: Linee pulite, elementi di de-costruzione e il classico look industriale di Off-White, abbinati al design leggendario delle Jordan.Materiali Premium: Pelle di alta qualità, inserti in mesh traspirante e dettagli in plastica trasparente che conferiscono un look moderno e sofisticato.Dettagli Firmati: Include il famoso &quot;zip-tie&quot; rosso, scritte virgolette e il logo di Off-White che rendono ogni paio un'opera d'arte indossabile." wrappingWidth="635.2000732421875">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Separator prefWidth="200.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Edizione Limitata">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Le Jordan x Off-White sono disponibili in quantità limitate. Non perdere l'opportunità di possedere un pezzo di storia della moda urbana. Visita il nostro sito o i negozi selezionati per assicurarti il tuo paio." wrappingWidth="637.6000366210938">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

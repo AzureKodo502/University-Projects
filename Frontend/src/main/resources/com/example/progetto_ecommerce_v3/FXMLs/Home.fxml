@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1535.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto_ecommerce_v3.Controller.HomeController">
+   <children>
+      <Pane layoutX="-14.0" prefHeight="27.0" prefWidth="1535" style="-fx-background-color: BLACK;" AnchorPane.leftAnchor="-14.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fx:id="Logout" fitHeight="22.0" fitWidth="22.0" layoutX="1510.0" layoutY="3.0" onMouseClicked="#logoutAction" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+               <image>
+                  <Image url="@../../../../images/homePageIcons/logout-removebg-preview.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="infoUtilizzo" fitHeight="29.0" fitWidth="35.0" layoutX="32.0" layoutY="-1.0" onMouseClicked="#infoUtilizzoClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/Informazione.png" />
+               </image>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </Pane>
+      <Pane layoutY="26.4" prefHeight="62.0" prefWidth="1535.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="26.0">
+         <children>
+            <TextField fx:id="BarraDiRicerca" focusTraversable="false" layoutX="564.0" layoutY="17.0" onKeyPressed="#searchKeyAction" prefHeight="35.0" prefWidth="406.0" promptText="Cerca" style="-fx-background-radius: 15;" />
+            <ImageView fx:id="openMenu" fitHeight="25.0" fitWidth="25.0" layoutX="1485.0" layoutY="20.0" onMouseClicked="#menuApri" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+               <image>
+                  <Image url="@../../../../images/homePageIcons/Menu.png" />
+               </image>
+            </ImageView>
+            <Separator fx:id="separator" layoutX="1450.0" layoutY="11.0" orientation="VERTICAL" prefHeight="41.0" prefWidth="0.0" />
+            <ImageView fitHeight="22.0" fitWidth="22.0" layoutX="938.0" layoutY="23.0" onMouseClicked="#searchButtonAction" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/homePageIcons/Cerca.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="carrello" fitHeight="43.0" fitWidth="43.0" layoutX="1365.0" layoutY="17.0" onMouseClicked="#loadCarrello" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+               <image>
+                  <Image url="@../../../../images/homePageIcons/ShoppingBag.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="preferiti" fitHeight="26.0" fitWidth="26.0" layoutX="1310.0" layoutY="20.0" onMouseClicked="#loadPreferiti" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+               <image>
+                  <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="account" fitHeight="23.0" fitWidth="23.0" layoutX="1255.0" layoutY="20.0" onMouseClicked="#loadPaginaUtente" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+               <image>
+                  <Image url="@../../../../images/homePageIcons/Account.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="LogoHome" fitHeight="60.0" fitWidth="206.0" layoutX="35.0" layoutY="5.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+               <image>
+                  <Image url="@../../../../images/Logo/Logo_Stride_Style.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="closeMenu" fitHeight="25.0" fitWidth="25.0" layoutX="1485.0" layoutY="20.0" onMouseClicked="#menuChiudi" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+               <image>
+                  <Image url="@../../../../images/homePageIcons/Menu.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="menuArrow" fitHeight="71.0" fitWidth="88.0" layoutX="1461.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true" rotate="180.0">
+               <image>
+                  <Image url="@../../../../images/homePageIcons/MenuArrow.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="anchorhome" layoutX="8.0" layoutY="301.0" prefHeight="362.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Pane fx:id="marche" layoutX="14.0" layoutY="14.0" prefHeight="100.0" prefWidth="1535.0" style="-fx-border-width: 2px; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-color: BLACK;" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <StackPane fx:id="stackNike" layoutX="27.0" layoutY="-1.0" prefHeight="100.0" prefWidth="150.0">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets></StackPane>
+                  <HBox prefHeight="100.0" prefWidth="1536.0">
+                     <children>
+                        <ImageView fx:id="marca" fitHeight="98.0" fitWidth="132.0" onMouseClicked="#Nike" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                           <image>
+                              <Image url="@../../../../images/homePageIcons/Nike.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="60.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="marca" fitHeight="100.0" fitWidth="120.0" onMouseClicked="#Adidas" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                           <image>
+                              <Image url="@../../../../images/homePageIcons/Adidas.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="marca" fitHeight="88.0" fitWidth="139.0" onMouseClicked="#Puma" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                           <image>
+                              <Image url="@../../../../images/homePageIcons/Puma.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="100.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="marca" fitHeight="95.0" fitWidth="100.0" onMouseClicked="#Jordan" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                           <image>
+                              <Image url="@../../../../images/homePageIcons/Jordan.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="100.0" top="2.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="marca" fitHeight="100.0" fitWidth="200.0" onMouseClicked="#Asics" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                           <image>
+                              <Image url="@../../../../images/homePageIcons/Asics.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="100.0" top="18.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="marca" fitHeight="78.0" fitWidth="173.0" onMouseClicked="#Reebok" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                           <image>
+                              <Image url="@../../../../images/homePageIcons/Reebok.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="100.0" top="10.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+            <HBox fx:id="bottomPane" layoutY="115.0" prefHeight="386.0" prefWidth="1566.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <Pane fx:id="sfumatura" layoutY="294.0" prefHeight="14.0" prefWidth="200.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Pane fx:id="menuPane" layoutX="1243.2" layoutY="100.0" prefHeight="258.0" prefWidth="277.0" style="-fx-border-color: BLACK; -fx-border-width: 2px;" AnchorPane.leftAnchor="1243.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <Button fx:id="AccediButton" layoutX="11.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#loadLogin" prefHeight="30.0" prefWidth="250.0" style="-fx-cursor: HAND;" text="ACCEDI" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Button>
+            <Separator fx:id="separator" layoutX="11.0" layoutY="94.0" prefWidth="250.0">
+               <padding>
+                  <Insets top="5.0" />
+               </padding></Separator>
+            <Label fx:id="oppureLabel" layoutX="116.0" layoutY="45.0" text="oppure">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="RegistratiTxt" layoutX="102.0" layoutY="71.0" onMouseClicked="#loadRegistrazione" style="-fx-cursor: HAND;" text="REGISTRATI">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <HBox layoutX="11.0" layoutY="108.0" prefHeight="42.0" prefWidth="250.0">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="118.0" text="Modalità notte">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <StackPane prefHeight="50.0" prefWidth="90.0">
+                     <ToggleButton fx:id="tema" layoutX="20.0" layoutY="20.0" onAction="#toggleButtonAction" prefHeight="30.0" prefWidth="53.0" styleClass="tema">
+                        <graphic>
+                           <Circle fx:id="thumbCircle" radius="10.0" styleClass="thumb" />
+                        </graphic>
+                        <StackPane.margin>
+                           <Insets />
+                        </StackPane.margin>
+                     </ToggleButton>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </StackPane>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="152.0" prefHeight="41.0" prefWidth="250.0">
+               <children>
+                  <Label fx:id="chisiamo" onMouseClicked="#ChiSiamo" prefHeight="50.0" prefWidth="94.0" style="-fx-cursor: hand;" text="CHI SIAMO ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label fx:id="infoprivacy" onMouseClicked="#InfoEPrivacy" prefHeight="50.0" prefWidth="130.0" style="-fx-cursor: hand;" text="INFO E PRIVACY">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets top="5.0" />
+               </padding>
+            </HBox>
+            <HBox layoutX="11.0" layoutY="200.0" prefHeight="41.0" prefWidth="250.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="35.0" prefWidth="258.0">
+                     <children>
+                        <ImageView fx:id="facebook" fitHeight="40.0" fitWidth="40.0" onMouseClicked="#facebookClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/facebook-removebg-preview.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="20.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="instagram" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#instaClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/insta.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets left="20.0" right="20.0" />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fx:id="twitter" fitHeight="35.0" fitWidth="35.0" onMouseClicked="#twitterClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/twitter.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </HBox>
+            <Text fx:id="benvenutoTxt" layoutX="48.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="BENVENUTO">
+               <font>
+                  <Font name="System Bold" size="30.0" />
+               </font>
+            </Text>
+            <Text fx:id="nomeTxt" fontSmoothingType="LCD" layoutX="63.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOME">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+            <Text fx:id="cognomeTxt" layoutX="138.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text="COGNOME">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+      <HBox layoutX="14.0" layoutY="118.0" prefHeight="182.0" prefWidth="1228.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="293.0" AnchorPane.topAnchor="100.0">
+         <children>
+            <ImageView fx:id="immHome" fitHeight="182.0" fitWidth="310.0" onMouseClicked="#tiffanyClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/homePageIcons/tiffanyyy.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="immHome" fitHeight="182.0" fitWidth="325.0" onMouseClicked="#badBunnyClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/homePageIcons/badBunny.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="immHome" fitHeight="182.0" fitWidth="336.0" onMouseClicked="#offWhiteClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/Offwhite/offwhite.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="immHome" fitHeight="182.0" fitWidth="306.0" onMouseClicked="#travisScottClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/TravisScott/travis.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+            <ImageView fx:id="lameloBall" fitHeight="180.0" fitWidth="306.0" onMouseClicked="#lameloBallClicked" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/homePageIcons/lamelo.png" />
+               </image>
+               <HBox.margin>
+                  <Insets left="30.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

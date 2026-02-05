@@ -1,0 +1,198 @@
+*{
+    -fx-fill: textColor;
+}
+
+.button{
+    -fx-text-fill: colorTextButton;
+    -fx-background-color : backgroundButton;
+    -fx-border-radius: 2;
+}
+
+
+.button:hover{
+    -fx-background-color: hoverColor;
+    -fx-border-color: borderColor;
+    -fx-border-radius: 2;
+}
+
+.button:pressed{
+    -fx-scale-x: 0.9; /* Ridurre la larghezza */
+    -fx-scale-y: 0.9;
+
+}
+
+#pane{
+    -fx-background-color: paneColor;
+}
+
+
+#borderpane,#menuPane, #PviewVbox,#hboxPview{
+    -fx-background-color: borderPaneColor;
+}
+
+#scroll_pane , #vbox, #hbox, #anchorhome1, #scroll_pane1,#backProductView,#puoitrovare{
+    -fx-background-color:  scrollPaneColor;
+}
+
+#separator{
+    -fx-background-color: sepColor;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: thumbColor;//cursore scrollpane
+}
+
+.scroll-bar .track {
+    -fx-background-color: scrollPaneColor;
+}
+
+.scroll-bar .increment-button, .scroll-bar .decrement-button {
+    -fx-background-color: scrollPaneColor;
+}
+
+.combo-box {
+    -fx-background-color: backgroundButton;
+}
+
+.combo-box:hover{
+    -fx-background-color: hoverComboBox;
+}
+
+.combo-box .list-cell{
+    -fx-background-color: listCellColor;
+}
+
+.combo-box .list-cell:selected{
+    -fx-background-color:listCellColor;
+}
+.combo-box .list-cell:hover{
+    -fx-background-color:listCellSelected;
+}
+
+
+
+.text-area {
+    -fx-control-inner-background: borderPaneColor;
+    -fx-background-color: borderPaneColor;
+}
+
+#chisiamo , #infoprivacy, #puoitrovare{
+    -fx-fill: black;
+    -fx-transition: -fx-font-size 0.3s ease-in-out;
+    -fx-underline:false;
+}
+
+#chisiamo: hover,   #infoprivacy: hover{
+    -fx-font-weight: bold;
+    -fx-underline:true;
+}
+
+
+.text-field, .password-field{
+    -fx-background-color: fieldColor;
+}
+
+.text-field, .password-field, #numcarta, #CVC, #MMAA,#numCivico,#citta,#cap{
+    -fx-text-fill: textFieldColor;
+}
+
+#numcarta, #CVC, #MMAA,#numCivico,#citta,#cap{
+    -fx-background-color: pagamentoField;
+}
+
+#sfumatura{
+    -fx-background-color: sfumaturaColor;
+}
+
+#marche{
+    -fx-background-color: marcheBackColor;
+}
+
+#anchorhome{
+    -fx-background-color: anchorhomeColor;
+}
+
+#bottomPane{
+    -fx-background-color: bottomColor;
+}
+
+#VBox1, #VBox2, #VBox3, #VBox4, #VBox5 ,#VBox6,  #VBox7, #VBox8, #VBox9, #VBox10, #VBox11, #VBox12{
+    -fx-border-radius: 10px;
+    -fx-border-width: 2px;
+    -fx-border-color: vboxBorderColor;
+}
+
+
+#tema {
+    -fx-background-color: #2e2e2e; /* Colore di sfondo quando il pulsante è spento */
+    -fx-padding: 2; /* Padding interno per il cerchio */
+    -fx-background-radius: 20; /* Arrotondamento dei bordi */
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0);
+}
+
+#tema:selected {
+    -fx-background-color: #4caf50; /* Colore di sfondo verde quando il pulsante è acceso */
+    -fx-alignment: center-right;
+}
+#tema .thumb {
+    -fx-background-color: #ffffff; /* Colore bianco del cerchio */
+    -fx-translate-x: -10; /* Posizione iniziale del cerchio */
+}
+
+#tema:selected .thumb {
+    -fx-translate-x: -2; /* Posizione del cerchio quando il pulsante è selezionato */
+}
+
+#tema:armed .thumb {
+    -fx-background-color: #c6c6c6; /* Colore del cerchio quando il pulsante è premuto */
+}
+
+
+
+#marca {
+    -fx-scale-x: 1;
+    -fx-scale-y: 1;
+    -fx-transition: -fx-scale-x 0.3s, -fx-scale-y 0.3s;
+}
+
+#marca:hover {
+    -fx-scale-x: 1.08; /* Scala in orizzontale al 80% */
+    -fx-scale-y: 1.08; /* Scala in verticale al 80% */
+}
+
+
+
+
+#back_view:hover{
+     -fx-scale-x: 1.2; /* Scala in orizzontale al 80% */
+     -fx-scale-y: 1.2; /* Scala in verticale al 80% */
+}
+
+#RegistratiTxt:hover{
+    -fx-font-weight: bold;
+    -fx-underline: true;
+}
+
+#textPubb .content{
+
+    -fx-border-color:borderPaneColor;
+}
+
+#textPubb:focus-traversable{
+    -fx-border-color:borderPaneColor;
+}
+
+#prodViewBorder{
+    -fx-background-color:scrollPaneColor;
+}
+
+#immHome:hover, #lameloBall:hover{
+    -fx-scale-x: 1.1;
+    -fx-scale-y: 1.1;
+
+}
+
+
+
+

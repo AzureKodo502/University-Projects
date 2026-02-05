@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1535.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto_ecommerce_v3.Controller.TiffanyController">
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane fx:id="pane" prefHeight="70.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="back_view" fitHeight="30.0" fitWidth="50.0" layoutX="37.0" layoutY="20.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/homePageIcons/home.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="stride" fitHeight="72.0" fitWidth="200.0" layoutX="669.0" layoutY="4.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/Logo/Logo_Stride_Style.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane fx:id="pane" prefHeight="70.0" prefWidth="1535.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="chisiamo" fontSmoothingType="LCD" layoutX="220.0" layoutY="40.0" onMouseClicked="#chisiamoClicked" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="CHI SIAMO" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fx:id="infoprivacy" fontSmoothingType="LCD" layoutX="700.0" layoutY="40.0" onMouseClicked="#infoClicked" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="INFO PRIVACY" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fx:id="puoitrovare" fontSmoothingType="LCD" layoutX="1137.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUOI TROVARCI ANCHE SU :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER" layoutX="1314.0" layoutY="17.0" prefHeight="18.0" prefWidth="162.0">
+                     <children>
+                        <ImageView fx:id="facebook" fitHeight="50.0" fitWidth="35.0" onMouseClicked="#facebookClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/facebook-removebg-preview.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="instagram" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#instaClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/insta.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="twitter" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#twitterClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/twitter.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </bottom>
+         <left>
+            <ImageView fitHeight="657.0" fitWidth="787.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../../images/Tiffany/immtiff1.jpg" />
+               </image>
+            </ImageView>
+         </left>
+         <right>
+            <ImageView fitHeight="657.0" fitWidth="381.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER">
+               <image>
+                  <Image url="@../../../../images/Tiffany/immmtiff3.jpg" />
+               </image>
+            </ImageView>
+         </right>
+         <center>
+            <VBox prefHeight="651.0" prefWidth="601.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label alignment="CENTER" prefHeight="127.0" prefWidth="763.0" text="NIKE AIR FORCE 1 X TIFFANY">
+                     <font>
+                        <Font name="System Bold" size="36.0" />
+                     </font>
+                  </Label>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Presentazione Esclusiva: Nike Air Force 1 x Tiffany &amp; Co." wrappingWidth="686.1366577148438">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Text>
+                  <Separator prefWidth="200.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Lusso e Stile in Unione Perfetta" wrappingWidth="634.9367065429688">
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nike e Tiffany &amp; Co. si uniscono per una collaborazione senza precedenti, portando il lusso senza tempo e lo stile iconico in un'unica scarpa. Presentiamo le nuove Nike Air Force 1 x Tiffany &amp; Co., un capolavoro di eleganza e design che ridefinisce le regole della moda urbana." wrappingWidth="717.5999145507812">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Separator prefWidth="200.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Design Elegante e Raffinato">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Le Nike Air Force 1 x Tiffany &amp; Co. sono progettate per emanare un'eleganza senza pari, con dettagli unici che rappresentano il meglio di entrambi i brand:Colorazione Iconica: Realizzate nel classico &quot;Tiffany Blue&quot; con accenti in argento, queste scarpe catturano immediatamente l'attenzione con la loro eleganza distintiva.Materiali di Lusso: Pelle di alta qualità combinata con dettagli in camoscio e rifiniture in argento sterling, per un look e una sensazione di lusso assoluto.Dettagli Esclusivi: Include il logo Tiffany inciso in argento, lacci in seta e il famoso ciondolo &quot;Return to Tiffany&quot; adattato per le sneaker." wrappingWidth="716.0001220703125">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <Separator prefWidth="200.0" />
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Disponibilità Limitata">
+                     <font>
+                        <Font name="System Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="7.0" />
+                     </VBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Le Nike Air Force 1 x Tiffany &amp; Co. sono disponibili in quantità estremamente limitate. Non perdere l'opportunità di possedere un pezzo esclusivo di questa collaborazione unica. Visita il nostro sito o i negozi selezionati per assicurarti il tuo paio." wrappingWidth="714.4000854492188">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets left="5.0" right="5.0" />
+               </padding>
+               <BorderPane.margin>
+                  <Insets left="20.0" right="20.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

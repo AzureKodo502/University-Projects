@@ -1,0 +1,23 @@
+*{
+    colorTextButton: black;
+    backgroundButton: #fcc358;
+    hoverColor: #ffa500;
+    paneColor: #fcc358;
+    textColor: black;
+    borderPaneColor: white;
+    scrollPaneColor:#f5f5f5;
+    sepColor: white;
+    thumbColor: #d2d2d2;
+    hoverComboBox:#ffa500;
+    fieldColor: #f5f5f5;
+    textFieldColor: black;
+    sfumaturaColor: linear-gradient(to top, #f5f5f5, #FCC358);
+    marcheBackColor: #f5f5f5;
+    anchorhomeColor: #f5f5f5;
+    bottomColor: #f5f5f5;
+    borderColor: black;
+    pagamentoField: white;
+    vboxBorderColor: black;
+    listCellColor: #fcc358;
+    listCellSelected:#ffa500;
+}

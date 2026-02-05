@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1535.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto_ecommerce_v3.Controller.InfoUtilizzoController">
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane fx:id="pane" prefHeight="70.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="back_view" fitHeight="30.0" fitWidth="50.0" layoutX="37.0" layoutY="20.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/homePageIcons/home.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="stride" fitHeight="72.0" fitWidth="200.0" layoutX="669.0" layoutY="4.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/Logo/Logo_Stride_Style.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+         <bottom>
+            <Pane fx:id="pane" prefHeight="70.0" prefWidth="1535.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="chisiamo" fontSmoothingType="LCD" layoutX="220.0" layoutY="40.0" onMouseClicked="#chisiamoClicked" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="CHI SIAMO" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fx:id="infoprivacy" fontSmoothingType="LCD" layoutX="700.0" layoutY="40.0" onMouseClicked="#infoClicked" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="INFO PRIVACY" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fx:id="puoitrovare" fontSmoothingType="LCD" layoutX="1137.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUOI TROVARCI ANCHE SU :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER" layoutX="1314.0" layoutY="17.0" prefHeight="18.0" prefWidth="162.0">
+                     <children>
+                        <ImageView fx:id="facebook" fitHeight="50.0" fitWidth="35.0" onMouseClicked="#facebookClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/facebook-removebg-preview.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="instagram" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#instaClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/insta.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="twitter" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#twitterClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/twitter.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </bottom>
+         <center>
+            <TextArea editable="false" prefHeight="200.0" prefWidth="200.0" text="Benvenuti nel nostro E-Commerce di Scarpe Stride Style!&#10;Questo progetto consente agli utenti di acquistare scarpe, &#10;gestire il proprio account, e molto altro.&#10;&#10;Come Registrarsi&#10;1. Clicca sul side menu (le tre linee poste in alto a destra) e clicca su 'Registrati'&#10;2. Compila il modulo con nome, email, password, ecc.&#10;3. Clicca su 'Registrati' per completare la registrazione.&#10;4. Riceverai un avviso di Conferma se la registrazione è andata a buon fine&#10;&#10;Come Loggarsi&#10;1. Clicca sul pulsante 'Login' Posto sempre nel side menu in alto a destra&#10;2. Inserisci email e password&#10;3. Clicca sul pulsante 'Login' per accedere al tuo account &#10;&#10;Navigazione del Sito&#10;Aggiungere una Scarpa ai Preferiti&#10;1. Per aggiungere una scarpe ai preferiti prima hai bisogno di eseguire il login&#10;2. Clicca sull'icona del Cuore posto nelle varie scarpe della home&#10;3. Troverai le tue scarpe preferiti nella pagina preferiti posta accanto al side menu&#10;&#10;Aggiungere una scarpa al Carrello&#10;1. E' possibile aggiungere una scarpa al carrello senza effettuare il login (ma ricorda che dovrai creare un account per procedere all'ordine)&#10;2. E' possibile aggiungere una scarpa al carrello tramite la pagina dei preferiti premendo sul pulsante 'Aggiungi al Carrello'&#10;3. In alternativa è possibile cliccare sulla scarpa interessata, selezionare la taglia e aggiungerla al carrello&#10;&#10;Schermata Utente&#10;1. Si ricorda si effettuare il login&#10;2. Nella pagina Schermata Utente troverai varie informazioni come Nome, Cognome, email, i tuoi ordini e il cambio password&#10;&#10;Scorciatoie Utili per la Navigazione del sito&#10;Scorciatoie dalla Home:&#10;Ctrl + H: Vai alla Home (refresh)&#10;Ctrl + L: Vai al Login (se non sei loggato)&#10;Ctrl + R: Vai alla Registrazione (se non sei loggato)&#10;Ctrl + U: Vai alla Schermata Utente (solo se sei loggato)&#10;Ctrl + P: Vai ai Preferiti (solo se sei loggato)&#10;Ctrl + C: Vai al Carrello" wrapText="true" BorderPane.alignment="CENTER">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </TextArea>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

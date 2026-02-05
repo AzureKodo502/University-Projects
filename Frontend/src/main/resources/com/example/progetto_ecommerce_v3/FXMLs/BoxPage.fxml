@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="370.0" prefWidth="1530.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto_ecommerce_v3.Controller.BoxPageController">
+   <children>
+      <ScrollPane fx:id="scroll_pane" prefHeight="350.0" prefWidth="1530.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <content>
+            <AnchorPane fx:id="anchorhome" minHeight="0.0" minWidth="0.0" prefHeight="992.0" prefWidth="1515.0" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+               <children>
+                  <HBox fx:id="Hbox1" prefHeight="310.0" prefWidth="1502.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <VBox fx:id="VBox1" alignment="CENTER" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox1" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti1" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto1" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa1" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo1" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="VBox2" alignment="CENTER" layoutX="65.0" layoutY="20.0" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox2" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti2" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto2" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa2" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo2" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="VBox3" alignment="CENTER" layoutX="365.0" layoutY="10.0" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox3" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti3" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto3" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa3" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo3" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="VBox4" alignment="CENTER" layoutX="665.0" layoutY="10.0" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox4" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti4" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto4" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa4" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo4" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="Hbox2" layoutX="-2.0" layoutY="310.0" prefHeight="310.0" prefWidth="1502.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="315.0">
+                     <children>
+                        <VBox fx:id="VBox5" alignment="CENTER" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox5" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti5" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto5" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa5" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo5" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="VBox6" alignment="CENTER" layoutX="65.0" layoutY="20.0" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox6" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti6" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto6" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa6" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo6" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="VBox7" alignment="CENTER" layoutX="365.0" layoutY="10.0" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox7" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti7" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto7" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa7" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo7" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="VBox8" alignment="CENTER" layoutX="665.0" layoutY="10.0" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox8" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti8" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto8" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa8" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo8" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="Hbox3" prefHeight="310.0" prefWidth="1502.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="630.0">
+                     <children>
+                        <VBox fx:id="VBox9" alignment="CENTER" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox9" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti9" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto9" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa9" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo9" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="VBox10" alignment="CENTER" layoutX="65.0" layoutY="20.0" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox10" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti10" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto10" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa10" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo10" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="VBox11" alignment="CENTER" layoutX="365.0" layoutY="10.0" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox11" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti11" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto11" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa11" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo11" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                        <VBox fx:id="VBox12" alignment="CENTER" layoutX="665.0" layoutY="10.0" prefHeight="328.0" prefWidth="300.0">
+                           <children>
+                              <HBox fx:id="hbox12" prefHeight="22.0" prefWidth="300.0">
+                                 <children>
+                                    <ImageView fx:id="Preferiti12" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                       <image>
+                                          <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                       </image>
+                                       <HBox.margin>
+                                          <Insets left="260.0" />
+                                       </HBox.margin>
+                                    </ImageView>
+                                 </children>
+                              </HBox>
+                              <StackPane fx:id="stackpane" alignment="TOP_RIGHT" prefHeight="210.0" prefWidth="300.0" style="-fx-cursor: hand;">
+                                 <children>
+                                    <ImageView fx:id="immagineProdotto12" fitHeight="200.0" fitWidth="280.0" preserveRatio="true" style="-fx-cursor: hand;" StackPane.alignment="CENTER" />
+                                 </children>
+                              </StackPane>
+                              <Label fx:id="NomeScarpa12" prefHeight="27.0" prefWidth="300.0" style="-fx-font-size: 18; -fx-font-weight: bold;">
+                                 <VBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </VBox.margin>
+                                 <StackPane.margin>
+                                    <Insets top="20.0" />
+                                 </StackPane.margin>
+                              </Label>
+                              <Label fx:id="Prezzo12" style="-fx-font-size: 18; -fx-font-weight: bold; -fx-text-fill: green;">
+                                 <StackPane.margin>
+                                    <Insets top="25.0" />
+                                 </StackPane.margin>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="55.0" top="10.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

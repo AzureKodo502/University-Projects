@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1535.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto_ecommerce_v3.Controller.InfoEPrivacyController">
+   <children>
+      <BorderPane fx:id="borderpane" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <Pane fx:id="pane" prefHeight="70.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fx:id="back_view" fitHeight="30.0" fitWidth="50.0" layoutX="37.0" layoutY="20.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/homePageIcons/home.png" />
+                     </image></ImageView>
+                  <ImageView fx:id="stride" fitHeight="72.0" fitWidth="200.0" layoutX="669.0" layoutY="4.0" onMouseClicked="#loadHome" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: HAND;">
+                     <image>
+                        <Image url="@../../../../images/Logo/Logo_Stride_Style.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="TOP_CENTER" layoutX="472.0" layoutY="47.0" prefHeight="82.0" prefWidth="595.0" text="INFO E PRIVACY">
+                     <padding>
+                        <Insets top="35.0" />
+                     </padding>
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+         </top>
+         <center>
+            <TextArea editable="false" prefHeight="556.0" prefWidth="1535.0" text="Facendo acquisti presso il nostro Sito web, condividerete con noi alcuni dati personali (indicati come “Dati personali”). Con la presente Informativa sulla privacy dei clienti (“Informativa”) vi informiamo su come elaboriamo i vostri Dati personali.&#10;Quali Dati personali acquisiamo da voi?&#10;Dati personali che condividete direttamente con noi &#10;Acquisiamo le seguenti categorie di Dati personali quando utilizzate i nostri Servizi (a seconda di quale dei Servizi state utilizzando):             &#10;a.     Dati personali del cliente: nome completo, titolo/prefisso, contatto telefonico, data di nascita, sesso, lingua preferita, indirizzo;            &#10;b.     Interessi e preferenze: cronologia degli acquisti (compresi resi o ordini annullati), numero di calzatura e/o taglia di abbigliamento, interessi;            &#10;c.     Informazioni sull'ordine: numero dell'ordine (tracking), stato e cronologia dell'ordine, dettagli sulla vendita dell'ordine, indirizzo di fatturazione e spedizione, informazioni sul conto bancario, storico degli acquisti;            &#10;d.     Comunicazioni con il Servizio clienti.&#10;&#10;Perché utilizziamo i vostri Dati personali?&#10;Utilizziamo i vostri Dati personali per le seguenti finalità e categorie di utilizzo specifiche:&#10;Per elaborare ed eseguire il vostro ordine&#10;Ciò include l’elaborazione e la consegna del vostro ordine, contattarvi in merito allo stato del vostro ordine o a qualsiasi altra informazione relativa al vostro ordine che dobbiamo comunicarvi.&#10;Fini del trattamento: l’elaborazione dei vostri Dati personali è necessaria per l’esecuzione di un contratto con voi. La mancata fornitura dei Dati personali richiesti implica che non possiamo stipulare tale contratto e consegnarvi il prodotto o servizio acquistato o richiesto.&#10;Per rispettare le leggi e le normative vigenti .&#10;&#10;Quando acquistate i nostri prodotti o utilizzate i nostri servizi, siamo tenuti per legge a conservare determinati Dati personali. Potremmo inoltre aver bisogno di trattare i vostri Dati personali per adempiere a ordini giudiziari o a richieste governative.&#10;Fini del trattamento: il trattamento dei vostri Dati personali per scopi legali e normativi è necessario per adempiere agli obblighi legali a cui siamo soggetti.&#10;&#10;&#10;Account personale &#10;Quando fate acquisti da Stride Style, potete registrare i vostri Dati personali e creare il vostro profilo personale. Anche se la registrazione non è necessaria, vi offre un'esperienza di pagamento rapida e semplice.&#10;Fini del trattamento: il trattamento dei vostri Dati personali si basa sul vostro consenso. Ricordate che potete sempre ritirare il vostro consenso cancellando il vostro Account personale.&#10;Per scopi di marketing, al fine di fornirvi contenuti personalizzati, offerte mirate e pubblicità sui nostri Servizi&#10; Vi forniamo contenuti personalizzati, offerte mirate e pubblicità per migliorare la vostra esperienza di acquisto, per fornirvi contenuti più rilevanti e per saperne di più su di voi. Ciò può includere la generazione di pubblicità personalizzate sui social media, come Facebook.&#10;&#10;Fini del trattamento: il trattamento dei vostri Dati personali si basa sul nostro legittimo interesse a svolgere la nostra attività tramite l'analisi su di voi come (potenziali) clienti, su come acquistate e utilizzate i nostri Servizi e a mantenere o instaurare un rapporto con voi. &#10;Elaboreremo questi Dati personali solamente quando i vostri interessi o diritti fondamentali non prevalgano sul nostro legittimo interesse commerciale. Laddove non possiamo fare affidamento sul legittimo interesse,&#10; il trattamento dei vostri Dati personali si basa sul vostro consenso. Ricordate che potete sempre ritirare il vostro consenso." BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="50.0" top="50.0" />
+               </BorderPane.margin>
+            </TextArea>
+         </center>
+         <bottom>
+            <Pane fx:id="pane" prefHeight="70.0" prefWidth="1535.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Text fx:id="chisiamo" fontSmoothingType="LCD" layoutX="220.0" layoutY="40.0" onMouseClicked="#chisiamoClicked" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-cursor: hand;" text="CHI SIAMO" underline="true">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Text>
+                  <Text fx:id="puoitrovare" fontSmoothingType="LCD" layoutX="1137.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PUOI TROVARCI ANCHE SU :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Text>
+                  <HBox alignment="CENTER" layoutX="1314.0" layoutY="17.0" prefHeight="18.0" prefWidth="162.0">
+                     <children>
+                        <ImageView fx:id="facebook" fitHeight="50.0" fitWidth="35.0" onMouseClicked="#facebookClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/facebook-removebg-preview.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="instagram" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#instaClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/insta.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <ImageView fx:id="twitter" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#twitterClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                           <image>
+                              <Image url="@../../../../images/Social/twitter.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets left="15.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </Pane>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="prodViewColor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="370.0" prefWidth="1500.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.progetto_ecommerce_v3.Controller.ProductViewController">
+   <children>
+      <BorderPane fx:id="prodViewBorder" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <right>
+            <VBox fx:id="PviewVbox" prefHeight="340.0" prefWidth="602.0" spacing="10.0" style="-fx-border-color: black; -fx-border-radius: 10; -fx-border-width: 1; -fx-background-radius: 12;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="ScarpaLabel" prefHeight="27.0" prefWidth="540.0" style="-fx-font-size: 20px;">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="PrezzoScarpa" prefHeight="18.0" prefWidth="120.0" style="-fx-font-size: 18px; -fx-text-fill: green;" textAlignment="CENTER">
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Label text="IVA INCLUSA">
+                     <VBox.margin>
+                        <Insets left="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <GridPane hgap="5.0" prefHeight="70.0" prefWidth="280.0" vgap="10.0">
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="70.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="25.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <VBox.margin>
+                        <Insets left="20.0" right="10.0" top="5.0" />
+                     </VBox.margin>
+                     <children>
+                        <RadioButton fx:id="radio36" focusTraversable="false" mnemonicParsing="false" onAction="#radio36Action" text="36">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radio37" focusTraversable="false" mnemonicParsing="false" onAction="#radio37Action" text="37" GridPane.columnIndex="1">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radio38" focusTraversable="false" mnemonicParsing="false" onAction="#radio38Action" text="38" GridPane.columnIndex="2">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radio39" focusTraversable="false" mnemonicParsing="false" onAction="#radio39Action" text="39" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radio40" focusTraversable="false" mnemonicParsing="false" onAction="#radio40Action" text="40" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radio41" focusTraversable="false" mnemonicParsing="false" onAction="#radio41Action" text="41" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radio42" focusTraversable="false" mnemonicParsing="false" onAction="#radio42Action" text="42" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radio43" focusTraversable="false" mnemonicParsing="false" onAction="#radio43Action" text="43" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                        <RadioButton fx:id="radio44" focusTraversable="false" mnemonicParsing="false" onAction="#radio44Action" text="44" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                           <GridPane.margin>
+                              <Insets left="5.0" />
+                           </GridPane.margin>
+                        </RadioButton>
+                     </children>
+                  </GridPane>
+                  <Label fx:id="spedGrat" style="-fx-text-fill: #a46b14;" text="Spedizione Gratuita">
+                     <VBox.margin>
+                        <Insets left="20.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <HBox fx:id="hboxPview" alignment="CENTER_RIGHT" prefHeight="105.0" prefWidth="578.0" style="-fx-background-radius: 11;">
+                     <children>
+                        <TextArea fx:id="DesrizioneProdotto" editable="false" focusTraversable="false" prefHeight="100.0" prefWidth="375.0" wrapText="true">
+                           <HBox.margin>
+                              <Insets bottom="3.0" left="20.0" right="30.0" />
+                           </HBox.margin>
+                           <font>
+                              <Font size="14.0" />
+                           </font></TextArea>
+                        <Button fx:id="AggiungiAlCarrello" mnemonicParsing="false" onMouseClicked="#AggiungiAlCarrello" prefHeight="30.0" prefWidth="220.0" style="-fx-font-size: 12; -fx-cursor: hand;" text="AGGIUNGI AL CARRELLO">
+                           <HBox.margin>
+                              <Insets right="30.0" />
+                           </HBox.margin></Button>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets bottom="15.0" right="110.0" top="15.0" />
+               </BorderPane.margin>
+            </VBox>
+         </right>
+         <left>
+            <Pane fx:id="P" prefHeight="350.0" prefWidth="656.0" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets bottom="5.0" left="130.0" top="5.0" />
+               </BorderPane.margin>
+               <children>
+                  <VBox layoutY="-4.0" prefHeight="364.0" prefWidth="653.0">
+                     <children>
+                        <HBox alignment="TOP_RIGHT" prefHeight="25.0" prefWidth="580.0">
+                           <children>
+                              <ImageView fx:id="PreferitiIcon" fitHeight="30.0" fitWidth="30.0" onMouseClicked="#addToWishlist" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+                                 <HBox.margin>
+                                    <Insets right="20.0" top="5.0" />
+                                 </HBox.margin>
+                                 <image>
+                                    <Image url="@../../../../images/homePageIcons/Preferiti.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="149.0" prefWidth="653.0">
+                           <children>
+                              <ImageView fx:id="ImmagineProdotto" fitHeight="145.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true" />
+                           </children>
+                        </HBox>
+                        <Separator prefHeight="5.0" prefWidth="580.0" />
+                        <HBox alignment="CENTER_LEFT" prefHeight="25.0" prefWidth="580.0">
+                           <children>
+                              <Text fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="SCARPE SIMILI">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" />
+                                 </HBox.margin>
+                              </Text>
+                           </children>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="140.0" prefWidth="580.0">
+                           <children>
+                              <VBox fx:id="ScarpeSimiliVbox1" alignment="TOP_CENTER" prefHeight="120.0" prefWidth="180.0">
+                                 <children>
+                                    <ImageView fx:id="ImmagineScarpeSimili1" fitHeight="80.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" />
+                                    <Text fx:id="ModelloScarpa1" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Text>
+                                    <Text fx:id="Prezzo1" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: green;" textAlignment="CENTER" wrappingWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets right="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="ScarpeSimiliVbox2" alignment="TOP_CENTER" layoutX="220.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0">
+                                 <children>
+                                    <ImageView fx:id="ImmagineScarpeSimili2" fitHeight="80.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" />
+                                    <Text fx:id="ModelloScarpa2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Text>
+                                    <Text fx:id="Prezzo2" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: green;" textAlignment="CENTER" wrappingWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" right="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="ScarpeSimiliVbox3" alignment="TOP_CENTER" layoutX="310.0" layoutY="10.0" prefHeight="120.0" prefWidth="180.0">
+                                 <children>
+                                    <ImageView fx:id="ImmagineScarpeSimili3" fitHeight="80.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;" />
+                                    <Text fx:id="ModelloScarpa3" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="170.0">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font></Text>
+                                    <Text fx:id="Prezzo3" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-text-fill: green;" textAlignment="CENTER" wrappingWidth="100.0">
+                                       <VBox.margin>
+                                          <Insets top="10.0" />
+                                       </VBox.margin>
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="15.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="5.0" />
+                           </VBox.margin>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </Pane>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

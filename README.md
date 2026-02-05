@@ -1,7 +1,7 @@
 # 🛒 E-Commerce Desktop Application – Full Stack Java Project
 
 ![Java](https://img.shields.io/badge/Java-21-blue)
-![Spring Boot](https://img.shields.io/badge/SpringBoot-3.x-brightgreen)
+![Spring Boot](https://img.shields.io/badge/SpringBoot-4.0.2-brightgreen)
 ![JavaFX](https://img.shields.io/badge/JavaFX-UI-orange)
 ![Architecture](https://img.shields.io/badge/Architecture-MVC-blueviolet)
 ![API](https://img.shields.io/badge/API-REST-success)

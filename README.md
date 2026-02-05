@@ -28,7 +28,6 @@ The main goal of this project was to design a scalable and maintainable software
 | ![Login Screen](screenshots/login.png) | ![Home Page](screenshots/home.png) |
 
 | **Shopping Cart** |
-|:---:|:---:|
 | ![Cart View](screenshots/cart.png) |
 
 ---
@@ -56,7 +55,7 @@ Open a terminal in the `Backend` folder and run:
 
 # Mac/Linux
 ./mvnw javafx:run
-
+```
 ##  Architecture
 
 The application follows a layered architecture both on frontend and backend.
@@ -150,12 +149,12 @@ The database is automatically populated through a CommandLineRunner script that 
 
 ---
 
-##  Future Improvements
+##  Future Improvements (Roadmap)
 
-- JWT Authentication
-- Payment gateway simulation
-- Docker containerization
-- Multi-currency API integration
+- Advanced Wishlist: Implementation of the Favorites/Wishlist management (Currently in MVP placeholder status).
+- Payment Gateway: Integration with Stripe or PayPal for real transactions.
+- Dockerization: Containerizing the Backend for easier deployment.
+- Multi-currency: API integration for currency conversion.
 
 ---
 
@@ -173,4 +172,4 @@ Through this project I developed practical experience in:
 
 ##  Author
 
-Developed by **[Tuo Nome]**
+Developed by **Oleksandr Bevtsyk**

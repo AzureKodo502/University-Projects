@@ -176,6 +176,10 @@ Through this project I developed practical experience in:
   
  ### Code Quality
 - Comprehensive **Javadoc** for all backend components to ensure maintainability and team collaboration.
+
+### Notes
+- The Frontend component of this application was initially developed as part of a **collaborative university project**, demonstrating teamwork and shared code management. The Backend was subsequently re-architected and expanded individually to implement a robust Spring Boot microservice structure.
+- Please note that **source code comments, variable names, and Javadoc documentation are written in Italian**, for the original academic requirements.
   
 ## License
 Project created for educational purposes and personal portfolio.

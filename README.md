@@ -48,8 +48,10 @@ Open a terminal in the `Backend` folder and run:
 
 # Mac/Linux
 ./mvnw spring-boot:run
-
+```
 ### Step 2: Start the Frontend
+Open a terminal in the `Frontend` foldern and run:
+```bash
 # Windows
 ./mvnw javafx:run
 

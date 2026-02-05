@@ -174,6 +174,16 @@ Attraverso questo progetto ho maturato esperienza pratica in:
 - Modellazione database con JPA/Hibernate
 
 ---
+### Documentazione
+- Copertura Javadoc completa per i livelli di servizio e controller.
+  
+### Qualità del Codice
+- **Javadoc** completo per tutti i componenti backend per garantire la manutenibilità e la collaborazione del team.
+
+### Note
+- Il componente Frontend di questa applicazione è stato inizialmente sviluppato come parte di un **progetto universitario collaborativo**, dimostrando il lavoro di squadra e la gestione condivisa del codice. Il Backend è stato successivamente riprogettato e ampliato individualmente per implementare una solida struttura di microservizi Spring Boot.
+- Si prega di notare che **i commenti del codice sorgente, i nomi delle variabili e la documentazione Javadoc sono scritti in italiano**, come da requisiti accademici originali.
+  
 ## Licenza
 Progetto creato per scopi didattici e portfolio personale.
 
